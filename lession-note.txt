@@ -12,3 +12,5 @@
 4.port binding : docker run -p from:to imgID
 
 5.docker-compose ps
+
+6.docker build -f  abc (abc is file name to use)
