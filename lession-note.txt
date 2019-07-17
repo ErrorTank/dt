@@ -1,0 +1,14 @@
+1. Docker build process:
+-Download alpine image
+-Generate a container base on alpine, install redis on it, then take a new fs snapshot to create a new temp image
+-Use that image to create a container, in that container, use start up cmd in docker file, then generate a new image and delete a temp image
+
+2.Tagging an image:
+-use -t tag when using build cmd: docker build -t (dockerID/projectName:version) (eg: tank123/concac:latest) .
+
+3.Use docker commit to generate image from container maybe
+-docker commit -c '(command list)' containerID
+
+4.port binding : docker run -p from:to imgID
+
+5.docker-compose ps
