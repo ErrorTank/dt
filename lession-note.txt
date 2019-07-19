@@ -14,3 +14,5 @@
 5.docker-compose ps
 
 6.docker build -f  abc (abc is file name to use)
+
+7.docker run -p port:port -v /app/node_modules -v $(pwd):/app imgID
