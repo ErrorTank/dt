@@ -11,3 +11,12 @@ services:
       - .:/myApp
     env_file:
       - .env
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /myApp/node_modules
+      - .:/myApp
+    env_file:
+      - .env
