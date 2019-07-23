@@ -20,3 +20,4 @@ services:
       - .:/myApp
     env_file:
       - .env
+    command: ["npm","run","test"]
